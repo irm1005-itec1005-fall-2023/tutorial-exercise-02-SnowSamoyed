@@ -19,17 +19,230 @@
         line-height: 1.6;
       }
       img {
-        width: 100%;
+        width: 500px;
         display: block;
         margin: 0 auto;
       }
+
+      aside {
+        width: 25%;
+        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+        float: right;
+        box-shadow: inset 5px 0 5px -5px #29627e;
+        font-style: italic;
+        color: #29627e;
+      }
+
+      aside > p {
+        margin: 0.5rem;
+      }
     </style>
+
+    
   </head>
+
   <body>
     <!-- INSTRUCTIONS -->
     <!-- TO DO: Add markup to the following content so that it has the proper content structure -->
-    <!-- You will need to use the following tags: h1, h2, h3, p, ul, li, a, section, nav, header, footer, main, input, label, fieldset, select, form, table, thead, tobody, tfoot, tr, td, img  -->
+    <!-- You will need to use the following tags: h1, h2, h3, p, ul, li, a, section, nav, header, 
+      footer, main, input, label, fieldset, select, form, table, thead, tobody, tfoot, tr, td, img  -->
     <!-- The correct element appears ABOVE the text -->
     <!-- You may remove the extra comments when you finish, but you don't need to -->
+
+    <header>
+        <h2>Everything you need to know about sushi.</h2>
+        <nav>
+          <h3>Site menu</h3>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+
+    <main>
+      <h1>Did you know that there are sushi like this?</h1>
+      <p>Sushi in different culture's accomadation </p>
+      <img src="images/head_page_sushi.jpg" alt="Photo of Sushi" />
+
+    
+      <h3>----------------------------------------------------------------------------------------------------------</h3>
+
+    
+      <section>
+        <h2>Table of content</h2>
+        <ul>
+          <li><a href="https://example.com">Westernized Sushi</a></li>
+          <li><a href="https://example.com">Chinese sushi</a></li>
+          <li><a href="https://example.com">Traditional Japanese sushi</a></li>
+        </ul>
+
+      </section>
+
+      <aside>
+        <h2>Traditional Japanese Sushi belike: </h2>
+        <img src="images/aside_sushi.jpg" alt="Traditional sushi">
+      </aside>
+
+      <section>
+        <h3>Westernized Sushi</h3>
+        <p>
+          Sushi is a world famous dish, it is always a go for for poeple desired for asian dishs. But 
+          in some places, people start to develop their own types of sushi.
+        </p>
+        <ul>
+          <li>
+            <p>Sushi Bagel</p>
+            <img src="images/sushi_bagel.jpg" alt="Sushi Bagel">
+          </li>
+          <li>
+            <p>Sushi Taco</p>
+            <img src="images/sushi_taco.jpg" alt="Sushi Taco">
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Cantonese Sushi</h3>
+        <p>
+          Cantonese culture and japanese culture are all east asian culture, their food creates a more harmony combination.
+        </p>
+        <ul>
+          <li>
+            <p>
+              Roasted duck sushi
+            </p>
+            <img src="images/cantonese_sushi.jpg" alt="Cantonese sushi">
+          </li>
+          <li>
+            <p>
+              Chicken claw sushi
+            </p>
+            <img src="images/cantonese_sushi2.jpg" alt="Cantonese sushi2">
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Here are a price list of our sushi that are sold in store.</h3>
+        <table>
+          <thead>
+            <tr>
+              <td>
+                Sushi name
+              </td>
+              <td>
+                Price
+              </td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Sushi bagel</td>
+              <td>$29.99</td>
+            </tr>
+
+            <tr>
+              <td>Sushi taco</td>
+              <td>$19.99</td>
+            </tr>
+
+            <tr>
+              <td>Roasted duck sushi</td>
+              <td>$25.99</td>
+            </tr>
+
+            <tr>
+              <td>Chicken claw sushi</td>
+              <td>$21.49</td>
+            </tr>          
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>Family size dish all-in-one </td>
+              <td>$88.88</td>
+            </tr>  
+          </tfoot>
+
+        </table>
+      </section>
+    </main>
+
+    <section>
+      <h3>Contact us to order</h3>
+      <form action="">
+        <fieldset>
+          <legend></legend>
+          <label for="name">Name</label>
+          
+          <input
+            required
+            minlength="2"
+            maxlength="20"
+            id="name"
+            type="text"
+            placeholder="Issac Newton"
+          />
+    
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="issac.newton@gmail.com"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>What would you like to order?</legend>
+          <label for="dishs">Choose a dish:</label>
+          <select name="dishs" id="dishs">
+              <optgroup label="Westernized Sushi">
+                <option value="sushibagel">Sushi bagel</option>
+                <option value="sushitaco">Sushi taco</option>
+              </optgroup>
+              <optgroup label="Cantonese Sushi">
+                <option value="roastedduch sushi">Roasted duch sushi</option>
+                <option value="chickenclaw sushi">chicken claw sushi</option>
+              </optgroup>
+              <optgroup label="Combo">
+                <option value="Family size dish all-in-one">Family size dish all-in-one</option>
+              </optgroup>
+          </select>
+
+        </fieldset>
+      
+        <label for="message">Message</label>
+        <fieldset>
+          <legend>How would you like to eat?</legend>
+          <textarea rows="10" id="message" placeholder="Lorem ipsum"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit to order!</button>
+
+      </form>
+    </section>
+
+    
+    
+    
+
+    <h3>----------------------------------------------------------------------------------------------------------</h3>
+
+    <footer>
+      <h2>Here is the footer</h2>
+        <nav>
+          <h3>Site menu</h3>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
   </body>
 </html>
